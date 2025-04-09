@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envi Daniel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Assets/ed.png" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            <!-- Logo -->
+            <a href="#" class="navbar-brand d-flex align-items-center ">
+                <img src="Assets/lui.png" alt="daniel" class="rounded-circle" width="50" height="50" style="object-fit: cover;">
+            </a>
+    
+            <!-- Offcanvas Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Offcanvas Content -->
+            <div class="offcanvas offcanvas-bottom h-75" id="offcanvasNavbar" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Option</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <!-- Centered nav links -->
+                    <ul class="navbar-nav mx-auto d-flex align-items-center">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link"><i class="fa-solid fa-wheelchair me-3 fa-2x text-warning"></i>À propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="outils.html" class="nav-link"><i class="fa-solid fa-head-side-virus me-3 fa-2x text-warning"></i>Outils</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="passion.html" class="nav-link"><i class="fa-solid fa-hand-holding-heart me-3 fa-2x text-warning"></i>Mes passions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="service.html" class="nav-link"><i class="fa-solid fa-business-time me-3 fa-2x text-warning"></i>Service</a>
+                        </li>
+                    </ul>
+                
+                    <div class="justify-content-end">
+                        <button id="toggleMode" class="btn btn-outline-secondary">
+                            <i class="bi bi-sun" id="modeIcon" data-bs-toggle="tooltip" title="Mode Sombre"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section (centré) -->
+    <div class="text-reset mt-5 pt-5 text-center">
+        <h1 class="display-4">Mes Services</h1>
+        <p class="lead">Découvrez les solutions que je propose pour répondre à vos besoins !</p>
+    </div>
+    <main class="container my-5 d-flex justify-content-center mt-5">
+        <div class="text-center">
+            <!-- Services Section -->
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+                <div class="col text-center">
+                    <div class="p-3 border rounded shadow-sm border-warning">
+                        <i class="fa-solid fa-globe fa-3x text-warning mb-3"></i>
+                        <h5 class="card-title">Sites web modernes</h5>
+                        <p class="card-text">Création de sites web responsive et élégants pour particuliers et entreprises.</p>
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <div class="p-3 border rounded shadow-sm border-warning">
+                        <i class="fa-regular fa-address-card me-3 fa-2x text-warning"></i>
+                        <h5 class="card-title">Portfolio ou vitrine</h5>
+                        <p class="card-text">Mettez en valeur vos compétences et projets avec un portfolio sur mesure.</p>
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <div class="p-3 border rounded shadow-sm border-warning">
+                        <i class="fa-brands fa-medapps me-3 fa-2x text-warning"></i>
+                        <h5 class="card-title">Formation / coaching en développement web</h5>
+                        <p class="card-text">Partagez vos idées et passions à travers un blog moderne et convivial.</p>
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <div class="p-3 border rounded shadow-sm border-warning">
+                        <i class="fa-solid fa-comments-dollar fa-3x text-warning mb-3"></i>
+                        <h5 class="card-title">Publicité pour Entreprises et leur Produits</h5>
+                        <p class="card-text">Nous aidons votre entreprise à se démarquer grâce à des campagnes publicitaires efficaces et ciblées.</p>
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <div class="p-3 border rounded shadow-sm border-warning">
+                        <i class="fa-solid fa-champagne-glasses fa-3x text-warning mb-3"></i>
+                        <h5 class="card-title">Sites d'événements</h5>
+                        <p class="card-text">Organisez et promouvez vos événements avec un site dédié et interactif.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <!-- About Me, Links, and Projects Section -->
+    <div class="container-fluid py-5">
+        <div class="container">
+          <div class="row">
+            <!-- First Column: About Me -->
+            <div class="col-md-4 mb-4">
+              <h2 class="text-warning">Envi Daniel</h2>
+              <p>Je suis développeur web. Avec les connaissances que j'ai, je crée des choses simples et sympas.</p>
+              <ul class="navbar-nav d-flex flex-row gap-3">
+                <li class="nav-item">
+                    <a href="https://www.youtube.com/@envidaniel" target="_blank" class="nav-link"><i class="bi bi-youtube" data-bs-toggle="tooltip" title="YouTube" data-bs-placement="top"></i></a>
+                  </li>
+                <li class="nav-item">
+                    <a href="mailto:envidaniel4@gmail.com" class="nav-link"><i class="bi bi-envelope-at" data-bs-toggle="tooltip" title="E-mail" data-bs-placement="top"></i></a>
+                  </li>
+                <li class="nav-item">
+                  <a href="https://twitter.com/@envidaniel" class="nav-link"><i class="bi bi-twitter-x" data-bs-toggle="tooltip" title="X" data-bs-placement="top"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link"><i class="bi bi-linkedin" data-bs-toggle="tooltip" title="LinkedIn" data-bs-placement="top"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://github.com/Envidaniel" class="nav-link"><i class="bi bi-github" data-bs-toggle="tooltip" title="GitHub" data-bs-placement="top"></i></a>
+                </li>
+              </ul> <i class=""></i>
+              <p><i class="fa-solid fa-map-pin mb-3 fa-2x text-warning"></i> Butembo, DRC</p>
+            </div>
+      
+            <!-- Second Column: Links -->
+            <div class="col-md-4 mb-4">
+              <h2 class="text-warning">Liens</h2>
+              <p><a href="index.html" class=" text-decoration-none text-reset">À propos</a></p>
+              <p><a href="outils.html" class=" text-decoration-none text-reset">Outils</a></p>
+              <p><a href="passion.html" class=" text-decoration-none text-reset">Mes passions</a></p>
+              <p><a href="service.html" class=" text-decoration-none text-reset">Services</a></p>
+            </div>
+      
+            <!-- Third Column: My Projects -->
+            <div class="col-md-4 mb-4">
+              <h2 class="text-warning">Mes Constructions</h2>
+              <p><a href="https://gadchau.github.io/website/" class="text-decoration-none text-reset">Gadchau</a></p>
+            </div>
+          </div>
+        </div>              
+      </div>
+      <footer class="footer container-fluid py-3   text-center">
+        &copy; 2025 Envi Daniel. Tous droits réservés<i class="fa-solid fa-face-grin-hearts me-3 fa-2x text-warning"></i>
+    </footer>
+
+    <!-- JavaScript pour activer le mode sombre/claire -->
+    <script>
+        const toggleButton = document.getElementById('toggleMode');
+        const modeIcon = document.getElementById('modeIcon');
+        const body = document.body;
+        const navbar = document.querySelector('.navbar');
+        const offcanvas = document.querySelector('.offcanvas');
+        const links = document.querySelectorAll('.nav-link');
+
+        // Appliquer le mode enregistré dans localStorage
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            body.classList.add('bg-dark', 'text-white');
+            navbar.classList.add('navbar-dark', 'bg-dark');
+            offcanvas.classList.add('bg-dark', 'text-white');
+            modeIcon.classList.replace('bi-sun', 'bi-moon');
+            links.forEach(link => link.classList.add('text-light'));
+        } else {
+            body.classList.add('bg-light', 'text-dark');
+            navbar.classList.add('navbar-light', 'bg-light');
+            offcanvas.classList.add('bg-light', 'text-dark');
+            modeIcon.classList.replace('bi-moon', 'bi-sun');
+            links.forEach(link => link.classList.add('text-dark'));
+        }
+
+        // Basculer entre le mode sombre et clair
+        toggleButton.addEventListener('click', () => {
+            if (body.classList.contains('bg-light')) {
+                body.classList.replace('bg-light', 'bg-dark');
+                body.classList.replace('text-dark', 'text-white');
+                navbar.classList.replace('navbar-light', 'navbar-dark');
+                navbar.classList.replace('bg-light', 'bg-dark');
+                offcanvas.classList.replace('bg-light', 'bg-dark');
+                offcanvas.classList.replace('text-dark', 'text-white');
+                modeIcon.classList.replace('bi-sun', 'bi-moon');
+                localStorage.setItem('darkMode', 'enabled');
+                links.forEach(link => link.classList.replace('text-dark', 'text-light'));
+            } else {
+                body.classList.replace('bg-dark', 'bg-light');
+                body.classList.replace('text-white', 'text-dark');
+                navbar.classList.replace('navbar-dark', 'navbar-light');
+                navbar.classList.replace('bg-dark', 'bg-light');
+                offcanvas.classList.replace('bg-dark', 'bg-light');
+                offcanvas.classList.replace('text-white', 'text-dark');
+                modeIcon.classList.replace('bi-moon', 'bi-sun');
+                localStorage.setItem('darkMode', 'disabled');
+                links.forEach(link => link.classList.replace('text-light', 'text-dark'));
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+/* Mode clair */
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+.text-dark {
+    color: #343a40 !important;
+}
+.navbar-light {
+    background-color: #f8f9fa !important;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #343a40 !important;
+}
+
+/* Mode sombre */
+.bg-dark {
+    background-color: #343a40 !important;
+}
+.text-white {
+    color: #fff !important;
+}
+.navbar-dark {
+    background-color: #343a40 !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff !important;
+}
+.offcanvas.bg-dark {
+    background-color: #343a40 !important;
+    color: #ffffff !important;
+}
+.offcanvas.bg-light {
+    background-color: #f8f9fa !important;
+    color: #000000 !important;
+}
+
+.animated-border {
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg, #f06, #fdc613) 1;
+    animation: borderAnimation 2s infinite alternate;
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-image: linear-gradient(45deg, rgb(209, 59, 119), #cfe716) 1;
+    }
+    100% {
+        border-image: linear-gradient(45deg, #ff7f00, #e0d908) 1;
+    }
+}
+
+
+.carousel-inner img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+  }
+  
